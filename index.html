@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pertemuan14</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>RIO MARYONO .JAVA SCRIPT DALAM HTML</h1>
+
+    <button id="myButton">Buat Bilangan Acak</button>
+
+    <p id="demo"></p>
+
+    <script>
+      // Mendapatkan referensi tombol dan paragraf
+      var button = document.getElementById("myButton");
+      var paragraph = document.getElementById("demo");
+
+      // Menambahkan event listener untuk menanggapi klik tombol
+      button.addEventListener("click", function () {
+        // Membuat bilangan acak antara 1 dan 100
+        var randomNumber = Math.floor(Math.random() * 100) + 1;
+
+        // Menetapkan teks paragraf dengan bilangan acak
+        paragraph.innerHTML = "Bilangan acak: " + randomNumber;
+      });
+    </script>
+  </body>
+</html>
